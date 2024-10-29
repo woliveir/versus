@@ -9,12 +9,19 @@ import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 
 interface IProps {
   linkText: string;
+  linkHref: string;
   icon: React.ReactElement;
 };
 
-export const ListItemE = ({linkText, icon}:IProps) => {
+export const ListItemE = ({linkText, linkHref, icon}:IProps) => {
   return (
-      <ListItem  component='a' href='#' >
+      <ListItem 
+        sx={{
+          color: 'white'
+        }}
+        component='a' 
+        href={linkHref || '#'}  
+      >
         <ListItemAvatar>
           <Avatar>
             {icon}

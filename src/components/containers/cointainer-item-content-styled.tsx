@@ -8,17 +8,12 @@ export const ContainerItemContent = styled.ul`
   transition-property: opacity;
   transition-duration: 500ms;
   transition-timing-function: ease;
-    
-  list-style: circle;
   color: white;
   position: absolute;
   top: 0;
-  padding: 10px;
+  padding: 0px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.20);
   backdrop-filter: blur(15px);
   border-radius: 10px 10px 10px 10px;
-  li {
-    margin-left: 10px;
-  }
 `;
